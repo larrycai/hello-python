@@ -45,4 +45,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --version
-        pytest -v tests --cov-report term --cov-report html --cov=. --cov-fail-under=85 app
+        pytest -v app --cov-report term --cov-report html --cov=. --cov-fail-under=85 
