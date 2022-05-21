@@ -44,7 +44,9 @@ jobs:
         COVERALLS_PARALLEL: true
         COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: Submit to coveralls
-      run: coveralls
+      run: |
+        coveralls
+        find .
   complete_coverals:
     needs: test
     runs-on: ubuntu-latest
