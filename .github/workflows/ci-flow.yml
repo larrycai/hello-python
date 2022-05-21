@@ -46,8 +46,6 @@ jobs:
       run: |
         pytest --version
         pytest -v app --cov-report term --cov-report xml --cov=. --cov-fail-under=85 
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: coverage.xml
+
+  
+  
