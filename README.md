@@ -1,4 +1,4 @@
-![ci workflow](https://github.com/larrycai/hello-python/actions/workflows/ci-flow.yml/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/larrycai/hello-python/badge.svg?branch=main)](https://coveralls.io/github/larrycai/hello-python?branch=main)
+![ci workflow](https://github.com/larrycai/hello-python/actions/workflows/ci-flow.yml/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/larrycai/hello-python/badge.svg?branch=main)](https://coveralls.io/github/larrycai/hello-python?branch=main) [![codecov](https://codecov.io/gh/larrycai/hello-python/branch/main/graph/badge.svg?token=JLCRAE3M41)](https://codecov.io/gh/larrycai/hello-python)
 
 # hello-python
 python samples for actions
