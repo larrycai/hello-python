@@ -1,5 +1,5 @@
 
-name: CI
+name: check coveralls
 on: [pull_request, push]
 
 jobs:
@@ -48,6 +48,7 @@ jobs:
       name: Submit to coveralls
       run: |
         coveralls debug
+        coveralls
   complete_coverals:
     needs: test
     runs-on: ubuntu-latest
