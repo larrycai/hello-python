@@ -36,10 +36,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-cov coverage
-        # coveralls
+        pip install pytest pytest-cov coverage coveralls
         # pip install https://github.com/TheKevJames/coveralls-python/archive/github_actions.zip
-        pip install https://github.com/bboe/coveralls-python/archive/github_actions.zip
+        # pip install https://github.com/bboe/coveralls-python/archive/github_actions.zip
     - name: Test with pytest
       run: coverage run --source app --module pytest
     - env:
@@ -48,7 +47,7 @@ jobs:
         COVERALLS_FLAG_NAME: ${{ matrix.python-version }}
       name: Submit to coveralls
       run: |
-        coveralls
+        coveralls debug
   complete_coverals:
     needs: test
     runs-on: ubuntu-latest
